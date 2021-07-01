@@ -52,7 +52,6 @@ namespace FilterServices
 
                 // check if it's even or not            
                 var offset = match.Value.Length % 2 == 0 ? 1 : 0;
-
                 var middleCharacter = match.Value.Substring((match.Length / 2) - offset, offset + 1);
 
                 // if it's an even number a vowel might be in the middle with a consoant or another vowel
@@ -65,8 +64,7 @@ namespace FilterServices
                         wordsToRemove.Add(match);
                     }
                 }
-                // if it's an odd number check if the vowel is in the middle and filter it out
-                // we need this check to avoid filtering out words such as "I"
+                // if it's an odd number check if the vowel is in the middle and filter it out              
                 else
                 {
                     // check that it is a char
