@@ -44,7 +44,7 @@ namespace TextFilter
                 }
             }
 
-            // trim any spaces that may be at the start
+            // trim any spaces that may left
             return stringBuilder.ToString().Trim();
         }
     }
